@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Vicky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="digital-colck.css">
+    <script src="https://kit.fontawesome.com/0823fa4094.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closmenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <!---------------digital-clock------------>
+
+
+            <div class="digital-clock">
+                <i class="uil uil-ellipsis-v dot-menu-btn" id="active-menu"></i>
+                <ul class="dot-menu" id="active-menu">
+                    <li class="menu-item" id="active-menu>
+                        <span class="clock-format-text" id="active-menu">24-hour format</span>
+                        <div class="format-switch-btn" id="active-menu" data-format="12"></div>
+                    </li>
+                </ul>
+                <div class="time">
+                    <span class="hours">00</span>
+                    <span class="dots">:</span>
+                    <span class="minutes">00</span>
+                    <div class="right-side">
+                        <span class="period">AM/PM</span>
+                        <span class="seconds">00</span>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <sapn class="month-name">Month</sapn>,
+                    <sapn class="day-name">Day</sapn>
+                    <sapn class="day-number">00</sapn>
+                    <sapn class="year">0000</sapn>
+                </div>
+            </div>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Vicky</span><br>Jen From India❤️</h1>
+            </div>
+        </div>
+
+    </div>
+    <!--------------- about ---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My journey in the world of technology has been an exciting one, and I thrive on turning
+                        innovative ideas into functional, user-friendly applications. With a diverse skill set and a
+                        commitment to excellence, I specialize in building efficient and versatile projects using a
+                        variety of programming languages and technologies. Here's a bit more about what I bring to the
+                        table.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Software Development</li>
+                            <li><span>Front end</span><br>website a user sees and interacts</li>
+                            <li><span>Back end</span><br>behind-the-scenes data storage and processing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - 2023</span><br>3-Years Experience</li>
+                            <li><span>I Have So Far</span><br>I don't Work In Any Company</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Guvi Geek Network Private Limited</li>
+                            <li><span>I Am Full Stack Developer</span><br>Web Application</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------Services------------>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>A full-stack developer is a developer or engineer who can build both the front end and the back
+                        end of a website. The front end (the parts of a website a user sees and interacts with) and the
+                        back end (the behind-the-scenes data storage and processing) VICKY</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Front End</h2>
+                    <p>A full-stack developer is a developer or engineer who can build both the front end and the back
+                        end of a website. The front end (the parts of a website a user sees and interacts with) and the
+                        back end (the behind-the-scenes data storage and processing) VICKY</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Back End</h2>
+                    <p>A full-stack developer is a developer or engineer who can build both the front end and the back
+                        end of a website. The front end (the parts of a website a user sees and interacts with) and the
+                        back end (the behind-the-scenes data storage and processing) VICKY</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------------Portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Full Stack Developer</h3>
+                        <p>Tha app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Front End</h3>
+                        <p>Tha app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Back End</h3>
+                        <p>Tha app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------Contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> @ developervicky28@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9363526377</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/DEVELOPERVICKY28"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vicky.__.chapter/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/vicky_deve59711"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> DEVELOPER VICKY. Made Wtih <i
+                    class="fa-solid fa-heart"></i> By Developer Vicky.</p>
+        </div>
+    </div>
+
+    <!--------------- about ---------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!---------------Side-menu-bar------------>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closmenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <!---------------contact-form------------>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzh6KMT_WhEH_c62TEZ7-3ljR20zNoS5A-LwEWk2IfA_KJserJh72cDrL6VnyKvPQw2jw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!---------------digital-clock------------>
+
+    <script>
+        //Javascript for switch clock format
+        const formatSwitchBtn = document.querySelector(".format-switch-btn");
+
+        formatSwitchBtn.addEventListener("click", () => {
+            formatSwitchBtn.classList.toggle("active");
+
+            var formatValue = formatSwitchBtn.getAttribute("data-format");
+
+            if (formatValue === "12") {
+                formatSwitchBtn.setAttribute("data-format", "24");
+            }
+            else {
+                formatSwitchBtn.setAttribute("data-format", "12");
+            }
+        });
+
+
+
+        //Get current time in javascript
+        function clock() {
+            var today = new Date();
+
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            let period = "AM";
+
+            //Set the time period(AM/PM)
+            if (hours >= 12) {
+                period = "PM";
+            }
+
+            //Set the 12-hour clock format
+            var formatValue = formatSwitchBtn.getAttribute("data-format");
+
+            if (formatValue === "12") {
+                hours = hours > 12 ? hours % 12 : hours;
+            }
+
+            //Add the 0 for the values  Lower then 10
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            document.querySelector(".hours").innerHTML = hours;
+            document.querySelector(".minutes").innerHTML = minutes;
+            document.querySelector(".seconds").innerHTML = seconds;
+            document.querySelector(".period").innerHTML = period;
+        }
+
+        var updateClock = setInterval(clock, 1000);
+
+        //Get the date in javascript
+        var today = new Date();
+        const dayNumber = today.getDate();
+        const year = today.getFullYear();
+        const dayName = today.toLocaleString("default", { weekday: "long" });
+        const monthName = today.toLocaleString("default", { month: "short" });
+
+        document.querySelector(".month-name").innerHTML = monthName;
+        document.querySelector(".day-name").innerHTML = dayName;
+        document.querySelector(".day-number").innerHTML = dayNumber;
+        document.querySelector(".year").innerHTML = year;
+
+        //Javascript for dot menu toggle
+        const dotmenuBtn = document.querySelector(".dot-menu-btn");
+        const dotMenu = document.querySelector(".dot-menu");
+
+        dotmenuBtn.addEventListener("click", () =>{
+            dotMenu.classList.toggle("active");
+        });
+        document.addEventListener("click", (e) => {
+            if(e.target.id !== "active-menu"){
+                dotMenu.classList.remove("active");
+            }
+        });
+
+    </script>
+
+
+<!---------------Chatbot------------>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "64s4lmwcIEEZN9su9nDKV",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="64s4lmwcIEEZN9su9nDKV"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+
+</body>
+
+</html>
